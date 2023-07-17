@@ -28,6 +28,5 @@ $UpassWord = $_POST['passcode'];
  } else{
     echo "Error " . $sql ."<br>";
  }
-
- $conn->close();
-?>
+$conn->close();
+?>..

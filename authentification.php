@@ -15,15 +15,16 @@ if($conn -> connect_error ){
 
 // retrieve dat from forms
 
-$username = $_POST['userName'];
-$firstName = $_POST['fName'];
-$UpassWord = $_POST['passcode'];
+$username = $_POST['typeEmailX'];
+
+$UpassWord = $_POST['typePassWordX'];
 
 //prepare SQ statement
  $sql = "SELECT * FROM users WHERE userName = '$userName' AND passcode = '$UpassWord' ;
 
- // execute the sql stateent
+
 
 
  $conn->close();
+ ?>
 
