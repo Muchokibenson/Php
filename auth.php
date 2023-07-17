@@ -5,7 +5,6 @@ $password = "";
 $dbName = "user_registration";
 
 // create connection
-
 $conn = new mysqli($serverName,$userName,$password , $dbName);
 // check connection
 if($conn -> connect_error ){
@@ -22,7 +21,8 @@ $UpassWord = $_POST['typePassWordX'];
 //prepare SQ statement
  $sql = "SELECT * FROM users WHERE userName = '$username' AND passcode = '$UpassWord'";
 
-
+header("Location:dashboard.html");
+exit();
 
 
  $conn->close();

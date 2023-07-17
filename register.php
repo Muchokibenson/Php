@@ -29,4 +29,4 @@ $UpassWord = $_POST['passcode'];
     echo "Error " . $sql ."<br>";
  }
 $conn->close();
-?>..
+?>
